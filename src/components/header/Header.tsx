@@ -14,6 +14,7 @@ export const Header = () => {
           <path d="M50 100L38.7743 65.4509H2.44717L31.8364 44.0983L20.6107 9.54915L50 30.9017L79.3893 9.54915L68.1636 44.0983L97.5528 65.4509H61.2257L50 100Z" fill="black" />
         </svg>
       </div>
+      <div className="inline-block m-auto text-white font-lobster scale-110 text-[36px]">P o r t f o l i o</div>
     </header>
   )
 }
