@@ -2,7 +2,8 @@ import { useContext } from 'react';
 import style from './style.module.css';
 import { ThemeContext } from '../../context/ThemeContext';
 import { ThemeToggle } from '../themeToggle/ThemeToggle';
-
+import usa from '../../assets/usa.svg';
+import ukraine from '../../assets/ukraine.svg';
 export const Header = () => {
 
   const { darkTheme } = useContext(ThemeContext);
@@ -24,10 +25,13 @@ export const Header = () => {
       <div className={`${darkTheme ? "light-theme" : "dark-theme"} ${style.centerblock}`}>P o r t f o l i o</div>
       <div className={style.rightblock}>
         <div className={style.rightcontent}>
-          <div className='relative m-auto'>
+          <div className='relative flex items-center'>
             <ThemeToggle />
           </div>
-          <div className={`${darkTheme ? "light-theme" : "dark-theme"} m-auto`}>EN / UA</div>
+          <div className={`${darkTheme ? "light-theme" : "dark-theme"} flex w-20 justify-around`}>
+            <img src={usa} alt="usa flag" width={32} height={32} onClick={() => console.log("Click")}/>
+            <img src={ukraine} alt="ukraine flag" width={32} height={32} onClick={() => console.log("Click")}/>
+          </div>
         </div>
       </div>
     </header>
