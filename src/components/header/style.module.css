@@ -1,0 +1,27 @@
+.container {
+    @apply grid grid-cols-3 h-32 w-full
+}
+
+.leftblock {
+    @apply relative flex items-center
+}
+
+.logosvg {
+    @apply flex overflow-visible rotate-[110deg] ml-7
+}
+
+.logotext {
+    @apply text-[28px] font-bold dark:text-white
+}
+
+.centerblock {
+    @apply inline-block m-auto font-lobster scale-110 text-[36px]
+}
+
+.rightblock {
+    @apply flex justify-center items-center
+}
+
+.rightcontent {
+    @apply grid grid-cols-2 h-16 w-[50%] ml-auto
+}

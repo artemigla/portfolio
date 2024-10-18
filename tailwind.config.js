@@ -7,7 +7,10 @@ module.exports = {
     fontFamily: {
       lobster: ['lobster']
     },
-    extend: {},
+    extend: [
+      'plugin:react/recommended',
+      'plugin:@typescript-eslint/recommended',
+    ],
   },
   plugins: [],
 }
