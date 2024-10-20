@@ -4,6 +4,7 @@ import { ThemeContext } from '../../context/ThemeContext';
 import { ThemeToggle } from '../themeToggle/ThemeToggle';
 import usa from '../../assets/usa.svg';
 import ukraine from '../../assets/ukraine.svg';
+
 export const Header = () => {
 
   const { darkTheme } = useContext(ThemeContext);
@@ -14,7 +15,7 @@ export const Header = () => {
         <svg className={style.logosvg} width="70" height="70" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g>
             <circle id='text' cx="50" cy="50" r="50" fill="gold" />
-            <text fill={`${darkTheme ? "light-theme" : "dark-theme"}`}>
+            <text fill={`${darkTheme ? "#000" : "#FFF"}`}>
               <textPath href='#text' className={style.logotext}>Front - end Developer</textPath>
             </text>
           </g>

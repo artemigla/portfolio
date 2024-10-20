@@ -1,5 +1,5 @@
 .container {
-    @apply grid grid-cols-3 h-32 w-full
+    @apply grid grid-cols-3 h-32 w-full border-b-[1px] border-gray-400
 }
 
 .leftblock {
@@ -11,7 +11,7 @@
 }
 
 .logotext {
-    @apply text-[28px] font-bold dark:text-white
+    @apply font-bold text-[28px] text-white
 }
 
 .centerblock {
