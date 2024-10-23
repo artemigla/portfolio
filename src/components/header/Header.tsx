@@ -29,7 +29,7 @@ export const Header = () => {
           <div className='relative flex items-center'>
             <ThemeToggle />
           </div>
-          <div className={`${darkTheme ? "light-theme" : "dark-theme"} flex w-20 justify-around`}>
+          <div className={`${darkTheme ? "light-theme" : "dark-theme"} flex w-20 justify-around transition duration-300 ease-in-out`}>
             <img src={usa} alt="usa flag" width={32} height={32} onClick={() => console.log("Click")}/>
             <img src={ukraine} alt="ukraine flag" width={32} height={32} onClick={() => console.log("Click")}/>
           </div>
